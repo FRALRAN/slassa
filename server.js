@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware para servir archivos estáticos
-app.use(express.static('public'));
+app.use(express.static('doc_html'));
 
 // Middleware para parsear el body del formulario
 app.use(bodyParser.urlencoded({ extended: false }));
